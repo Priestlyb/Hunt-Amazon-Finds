@@ -1,0 +1,19 @@
+:root {
+  --navy: #182747;
+  --brown: #562B08;
+  --green: #647E68;
+  --gray: #D8D8D8;
+}
+body {
+  margin: 0;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Merriweather";
+}

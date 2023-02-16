@@ -1,0 +1,22 @@
+#navbar {
+    padding: 0px 50px;
+}
+
+.li {
+    color: white;
+}
+
+#pristina-logo {
+    width: 15%;
+}
+
+.drdown {
+    align-items: left;
+}
+
+@media (max-width: 1028px) {
+    #navbar {
+        padding: 0px 15px;
+    }
+}
+
