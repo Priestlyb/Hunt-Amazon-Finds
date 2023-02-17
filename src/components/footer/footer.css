@@ -1,0 +1,28 @@
+.footer {
+    padding: 50px;
+    color: white;
+    background-color: #005E99;
+}
+
+.row div {
+    margin-top: 20px;
+}
+
+.col_12 {
+    text-align: center;
+}
+
+.col_12 h3 {
+    font-weight: 600;
+}
+
+.col_12 h1 {
+    color: #FFB31A;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.col_right {
+    display: flex;
+    justify-content: end;
+}

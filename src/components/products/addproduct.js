@@ -1,4 +1,4 @@
-import axios from 'axios';
+import { AxiosInstance } from '../../config';
 import React, { useState } from 'react'
 import { useNavigate } from "react-router-dom";
 
@@ -21,7 +21,7 @@ const Addproduct = () => {
    console.log(e.target.name, "value", e.target.value);
     };
     const sendRequest = async () => {
-      axios.post("http://localhost:5001/products", {
+      AxiosInstance.post("/products", {
         image: String(inputs.image),
         title: String(inputs.title),
         description: String(inputs.description),

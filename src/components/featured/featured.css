@@ -1,4 +1,5 @@
 .featured {
+    height: calc(100vh - 80px);
     background-color: #fff;
 }
 
@@ -39,13 +40,18 @@
     .col_left {
         display: flex;
         justify-content: center;
-        margin-top: 50px;
+        align-items: center;
+        margin-top: 150px;
         padding-left: 0;
         text-align: center;
     }
 
     .col_left h1 {
-        font-size: 24px;
+        font-size: 2rem;
+    }
+
+    .featured_img {
+        width: 100%;
     }
 
     .col_bottom a {

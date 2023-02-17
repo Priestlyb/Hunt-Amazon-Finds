@@ -45,8 +45,8 @@ function Featured() {
   }
 
   return (
-    <div className='container-fluid'>
-      <div className='featured row'>
+    <div className='container-fluid featured'>
+      <div className='row'>
         <div className='col_left col-lg-6'>
           <div>
           <h1>Can You Feel It?</h1>
