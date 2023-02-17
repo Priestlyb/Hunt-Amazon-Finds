@@ -35,9 +35,12 @@ function Products() {
       <div id='products_item'>
       <div className='products'>
       {products &&
-        products
-          .filter((product) => {
-            return search.toLowerCase() === '' ? product : product.title.toLowerCase().includes(search);
+
+            products.filter((product) => {
+              const searchTerm = search.toLowerCase(); // convert search term to lowercase
+              const productTitle = product.title.toLowerCase(); // convert product title to lowercase
+              return searchTerm === '' ? product : productTitle.includes(searchTerm);
+            
           })
           .map((product, id) => (
             <div key={id}>

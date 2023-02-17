@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./featured.css"
-import ghost from "./Mood.mp4"
+import ghost from "./mood.gif"
 
 function Featured() {
   const [loopNum, setLoopNum] = useState(0);
@@ -50,12 +50,12 @@ function Featured() {
         <div className='col_left col-lg-6'>
           <div>
           <h1>Can You Feel It?</h1>
-          <h1 className="txt-rotate" dataperiod="2000" data-rotate='[ "Hunt Amazon finds!!", "Hunt Amazon finds!!", "Hunt Amazon finds!!" ]'><span className="wrap">{text}</span></h1>
+          <h1 className="txt-rotate" dataperiod="800" data-rotate='[ "Hunt Amazon finds!!", "Hunt Amazon finds!!", "Hunt Amazon finds!!", "When You Just Feel It?", "Hunt Amazon Finds!!" ]'><span className="wrap">{text}</span></h1>
           </div>
 
         </div>
-        <div className='col-lg-6'>
-          <video className='featured_img' src={ghost} autoPlay loop muted />
+        <div className='col_right col-lg-6'>
+          <img className='featured_img' src={ghost} autoPlay loop muted alt=""/>
         </div>
         <div className='col_bottom col-lg-12'>
           <a href='#products'>

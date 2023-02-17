@@ -1,5 +1,5 @@
 .featured {
-    background-color: #2A4189;
+    background-color: #fff;
 }
 
 .col_left {
@@ -9,7 +9,7 @@
 }
 
 .col_left h1 {
-    color: #fff;
+    color: #000;
     font-size: 50px;
     font-weight: 800;
 }
@@ -18,21 +18,24 @@
     color: #FFB31A;
 }
 
+.col_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .featured_img {
     width: 85%;
 }
 
 .col_bottom, .col_bottom a {
-    color: #FFF;
+    color: #000;
     font-size: 25px;
     text-align: center;
 }
 
 
 @media (max-width: 1028px)  {
-    .featured {
-        height: 100vh;
-    }
     .col_left {
         display: flex;
         justify-content: center;
@@ -43,5 +46,9 @@
 
     .col_left h1 {
         font-size: 24px;
+    }
+
+    .col_bottom a {
+        display: none;
     }
 }

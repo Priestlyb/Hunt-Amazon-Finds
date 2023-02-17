@@ -53,20 +53,20 @@
   border: 2px solid transparent;
   border-radius: 8px;
   outline: none;
-  background-color: #D9E8D8;
-  color: #0d0c22;
+  background-color: #005E99;
+  color: #fff;
   box-shadow: 0 0 5px #C1D9BF, 0 0 0 10px #f5f5f5eb;
   transition: .3s ease;
 }
 
 .search_input::placeholder {
-  color: #777;
+  color: #fff;
 }
 
 .icon {
   position: absolute;
   left: 1rem;
-  fill: #777;
+  fill: #fff;
   width: 1rem;
   height: 1rem;
 }
