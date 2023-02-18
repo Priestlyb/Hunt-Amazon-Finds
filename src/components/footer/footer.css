@@ -31,4 +31,12 @@
     .footer {
         padding: 10px;
     }
+
+    .col_12 h1 {
+        font-size: 1.3rem;
+    }
+
+    .col_right {
+        font-size: 0.9rem;
+    }
 }
