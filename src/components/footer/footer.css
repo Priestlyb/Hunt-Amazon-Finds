@@ -26,3 +26,9 @@
     display: flex;
     justify-content: end;
 }
+
+@media (max-width: 1028px) {
+    .footer {
+        padding: 10px;
+    }
+}

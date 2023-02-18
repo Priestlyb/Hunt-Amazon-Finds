@@ -10,9 +10,17 @@ const ReadMore = ({ content }) => {
         <div>
             <p>{limitedWords}</p>
 
-            <p onClick={() => setShowFull(!showFull)}>
+            {/* <p onClick={() => setShowFull(!showFull)}>
                 {showFull ? "Show Less" : "Read More"}
-            </p>
+            </p> */}
+
+            <button className="cta Go_back_icon" onClick={() => setShowFull(!showFull)}>
+                <span className="hover-underline-animation">
+                    <a href='/#portfolios'>
+                        {showFull ? "Show Less" : "Read More"}
+                    </a>
+                </span>
+            </button>
         </div>
     );
 };
