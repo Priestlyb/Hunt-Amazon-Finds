@@ -23,11 +23,11 @@ const Product = (props) => {
                 </div>
                 <div className='card_info'>
                 <div className="card-info">
-                    <h1 className="text-title"><Titlereadmore content={title} /></h1>
+                    <h2 className="text-title"><Titlereadmore content={title} /></h2>
                     <p className="text-body"><ReadMore content={description} /></p>
                 </div>
                 <div className="card-footer">
-                    <span className="text-title">${price}</span>
+                    <span className="footer-title">${price}</span>
 
                     <a href={link} target='blank'>
                         <div className="card-button">

@@ -109,7 +109,12 @@ svg {
 
 /*Text*/
 .text-title {
-  font-weight: 900;
+  font-weight: 800;
+  font-size: 1.1em;
+}
+
+.footer-title {
+  font-weight: 500;
   font-size: 1.1em;
 }
 
