@@ -1,7 +1,7 @@
 .footer {
     padding: 50px;
     color: white;
-    background-color: #005E99;
+    background-color: #000;
 }
 
 .row div {
@@ -17,7 +17,7 @@
 }
 
 .col_12 h1 {
-    color: #FFB31A;
+    color: #005E99;
     font-weight: 800;
     text-transform: capitalize;
 }

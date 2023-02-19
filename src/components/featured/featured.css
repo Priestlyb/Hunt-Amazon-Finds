@@ -11,7 +11,7 @@
 
 .col_left h1 {
     color: #000;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 800;
 }
 
@@ -48,7 +48,8 @@
     }
 
     .col_left h1 {
-        font-size: 2rem;
+        padding: 10px;
+        font-size: 1.6rem;
     }
 
     .featured_img {
