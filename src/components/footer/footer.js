@@ -8,7 +8,7 @@ function Footer() {
 
         <div className='row'>
             <div className='col_12 col-lg-12'>
-                <h3>How it works?</h3>
+                <h2>How it works?</h2>
                 <p>It’s Affiliating Marketing, for every purchase made by you, I get a commission from Amazon as a marketer.</p>
                 <h1>Check out products & shop a lot!</h1>
             </div>
