@@ -110,16 +110,18 @@ svg {
 /*Text*/
 .text-title {
   font-weight: 800;
-  font-size: 1.1em;
+  font-size: 1em;
+  font-family: "Josefin Sans";
 }
 
 .footer-title {
   font-weight: 500;
   font-size: 1.1em;
+  font-family: "stick";
 }
 
 .text-body {
-  font-size: .9em;
+  font-size: .8em;
 }
 
 /*Button*/

@@ -7,7 +7,7 @@
 body {
   margin: 0;
   color: #000;
-  font-family: "Stick";
+  font-family: "Merriweather";
   font-weight: 200;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,5 +19,5 @@ h1 {
 }
 
 h2 {
-  font-family: "Rampart One";
+  font-family: "josefin sans";
 }
