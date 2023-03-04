@@ -18,8 +18,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' exact element={<Layout />} />
-          <Route path='/para32satalaya' element={<Addproduct />} />
-          <Route path='/updateproduct/:id' element={<Updateproduct />} />
+          <Route path='/para32satalaya' element={user ? <Addproduct /> : <Login />} />
+          <Route path='/updateproduct/:id' element={user ? <Updateproduct /> : <Login />} />
           <Route path="/admin" element={user ? <AdminPage /> : <Login />} />
         </Routes>
         <Footer />
