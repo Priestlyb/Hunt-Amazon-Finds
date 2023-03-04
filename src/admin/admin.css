@@ -1,0 +1,186 @@
+.db_header {
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+}
+
+.upload_img {
+    width: 100px;
+    aspect-ratio:  1/1;
+    object-fit: contain;
+}
+
+.edit_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin_btn {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+
+/* Loader */
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: white;
+}
+
+.l {
+    color: black;
+    opacity: 0;
+    animation: pass 2s ease-in-out infinite;
+    animation-delay: 0.2s;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 3px #919191;
+  }
+  
+  .o {
+    color: black;
+    opacity: 0;
+    animation: pass 2s ease-in-out infinite;
+    animation-delay: 0.4s;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 3px #919191;
+  }
+  
+  .a {
+    color: black;
+    opacity: 0;
+    animation: pass 2s ease-in-out infinite;
+    animation-delay: 0.6s;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 3px #919191;
+  }
+  
+  .d {
+    color: black;
+    opacity: 0;
+    animation: pass 2s ease-in-out infinite;
+    animation-delay: 0.8s;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 3px #919191;
+  }
+  
+  .i {
+    color: black;
+    opacity: 0;
+    animation: pass 2s ease-in-out infinite;
+    animation-delay: 1s;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 3px #919191;
+  }
+  
+  .n {
+    color: black;
+    opacity: 0;
+    animation: pass 2s ease-in-out infinite;
+    animation-delay: 1.2s;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 3px #919191;
+  }
+  
+  .g {
+    color: black;
+    opacity: 0;
+    animation: pass 2s ease-in-out infinite;
+    animation-delay: 1.4s;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 3px #919191;
+  }
+  
+  .d1 {
+    color: black;
+    opacity: 0;
+    animation: pass1 2s ease-in-out infinite;
+    animation-delay: 1.6s;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 3px #919191;
+  }
+  
+  .d2 {
+    color: black;
+    opacity: 0;
+    animation: pass1 2s ease-in-out infinite;
+    animation-delay: 2s;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 3px #919191;
+  }
+
+  /* Admin add btn */
+
+  .admin_add_btn {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .cssbuttons-io-button {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+  }
+  
+  .cssbuttons-io-button svg {
+    margin-right: 6px;
+  }
+  
+  .cssbuttons-io-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+  }
+  
+  .cssbuttons-io-button:active {
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+  }
+  
+  @keyframes pass {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pass1 {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }

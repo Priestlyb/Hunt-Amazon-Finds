@@ -38,6 +38,13 @@ const Addproduct = () => {
 
   return (
     <div className='container addproduct'>
+
+    <a href='/admin' className='admin_back'>
+    <button className='back_admin'>
+    Back here
+    </button>
+    </a>
+    
         <form className='row' onSubmit={handleSubmit}>
             <input className='input col-lg-6' value={inputs.image} onChange={handleChange} name="image" placeholder='Image' />
             <input className='input col-lg-6' value={inputs.title} onChange={handleChange} name="title" placeholder='Title' />

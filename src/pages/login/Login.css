@@ -1,0 +1,75 @@
+.login {
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(145, 165, 247, 0.5)
+    ), url("https://res.cloudinary.com/priestlythedon/image/upload/v1677914001/uploads/fsnkaj7iz6hncgfkxbsv.gif");
+    background-size: cover;
+}
+
+.loginTitle {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.loginForm {
+    margin-top:  20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm> label {
+    margin: 10px 0;
+}
+
+.loginInput {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.loginButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #fee36e;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.loginButton:disabled{
+    cursor: not-allowed;
+    background-color: rgb(252, 173, 173);
+  }
+
+.registerButton {
+    position: absolute;
+    top: 80px;
+    color: white;
+    border: none;
+    right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #373e98;
+}
+
+.password-input-wrapper {
+    padding: 10px;
+    background-color: white;
+}
+
+.password-input {
+    background: none;
+    border: none;
+}
+
+.password-toggle-button {
+    padding-left: 10px;
+}

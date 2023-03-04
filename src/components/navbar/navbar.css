@@ -28,6 +28,10 @@
     color: rgb(221, 98, 118);
 }
 
+.logout_btn {
+    cursor: pointer;
+}
+
 @media (max-width: 1028px) {
     #navbar {
         padding: 0px 15px;

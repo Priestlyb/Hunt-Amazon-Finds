@@ -1,16 +1,28 @@
-import React from 'react';
-import ReadMore from './readmore';
-import Titlereadmore from './titlereadmore';
+import React from 'react'
+import "./admin.css"
+import ReadMore from '../components/products/readmore.js';
+import Titlereadmore from '../components/products/titlereadmore.js';
+import { useNavigate } from "react-router-dom";
+import { AxiosInstance } from '../config';
 
-const Product = (props) => {
-    const { title, description, price, image, link } = props.product;
+const Adminsingle = (props) => {
+
+    const history = useNavigate();
+    const { _id, title, description, price, image, link } = props.product;
+
+    const deleteHandler = async () => {
+        await AxiosInstance.delete(`/products/${_id}`)
+            .then((res) => res.data)
+            .then(() => history("/"))
+            .then(() => history("/"));
+    }
 
     return (
-            <div className="card">
-                <div className="card-img">
-                    <img src={image} alt='' width='100%' height='100px' />
-                </div>
-                <div className='card_info'>
+        <div className="card">
+            <div className="card-img">
+                <img src={image} alt='' width='100%' height='100px' />
+            </div>
+            <div className='card_info'>
                 <div className="card-info">
                     <h2 className="text-title"><Titlereadmore content={title} /></h2>
                     <p className="text-body"><ReadMore content={description} /></p>
@@ -29,16 +41,16 @@ const Product = (props) => {
                     </a>
 
                 </div>
-                </div>
-                
-                    {/* <button>
-                        <a href={`/updateproduct/${_id}`}>Update</a>
-                    </ button>
-                    <br /> <br />
-                    <button onClick={deleteHandler}>Delete</button>                     */}
-
             </div>
+
+            <button>
+                <a href={`/updateproduct/${_id}`}>Update</a>
+            </ button>
+            <br /> <br />
+            <button onClick={deleteHandler}>Delete</button>
+
+        </div>
     )
 }
 
-export default Product
+export default Adminsingle
