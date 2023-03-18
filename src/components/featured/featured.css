@@ -12,13 +12,12 @@
     align-items: center;
 }
 
-.col_left p {
-    color: #3E54AC;
-    font-size: 16px;
+.col_left h1 {
+    color: #000;
+    font-size: 30px;
     font-weight: 700;
     letter-spacing: 8px;
-    line-height: 50px;
-
+    line-height: 55px;
 }
 
 .col_right {
@@ -45,13 +44,12 @@
         align-items: center;
         margin-top: 150px;
         padding-left: 0;
-        text-align: center;
     }
 
     .col_left h1 {
-        padding: 10px;
-        font-size: 1.5rem;
-        letter-spacing: 3px;
+        font-size: 14px;
+        padding: 0 25px;
+        line-height: 30px;
     }
 
     .featured_img {

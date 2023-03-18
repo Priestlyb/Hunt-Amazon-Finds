@@ -24,6 +24,10 @@
   justify-content: space-between;
 }
 
+.admin_add_btn {
+  margin-left: 10px;
+}
+
 
 /* Loader */
 

@@ -27,7 +27,7 @@ function Navbar() {
           <ul className="navbar-nav" Style="margin-left: auto;">
 
             <li className="nav-item">
-              <Link className="nav-link active disabled">
+              <Link className="nav-link active disabled" Style="color: #FFA500;">
                 See the Face You Love Light Up With Hunt amazon finds Products
               </Link>
             </li>

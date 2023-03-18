@@ -6,10 +6,10 @@ function Featured() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(30 - Math.random() * 10);
+  const [delta, setDelta] = useState(550 - Math.random() * 1);
   const [, setIndex] = useState();
   const toRotate = [ "Welcome to Hunt Amazon Finds,", "where adventure awaits in the cursed jungle.", "But be warned, for the jungle is full of treasures that hold unspeakable horrors.", "Will you have the courage to explore its depths and claim the treasures that await, or will you fall victim to its cursed power" ];
-  const period = 1000;
+  const period = 550;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -27,7 +27,7 @@ function Featured() {
     setText(updatedText);
 
     if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
+      setDelta(prevDelta => prevDelta / 1);
     }
 
     if (!isDeleting && updatedText === fullText) {
@@ -37,10 +37,10 @@ function Featured() {
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
       setLoopNum(loopNum + 5);
-      setIndex(1);
-      setDelta(500);
+      setIndex(10);
+      setDelta(1);
     } else {
-      setIndex(prevIndex => prevIndex + 1);
+      setIndex(prevIndex => prevIndex + 2);
     }
   }
 
@@ -49,7 +49,7 @@ function Featured() {
       <div className='row featured_row'>
         <div className='col_left col-lg-6'>
           <div>
-          <h1 className="txt-rotate" dataperiod="800" data-rotate='[ "Welcome to Hunt Amazon Finds, where adventure awaits in the cursed jungle. But be warned, for the jungle is full of treasures that hold unspeakable horrors. Will you have the courage to explore its depths and claim the treasures that await, or will you fall victim to its cursed power" ]'><span className="wrap">{text}</span></h1>
+          <h1 className="txt-rotate animate__animated animate__fadeInRight" dataperiod="800" data-rotate='[ "Welcome to Hunt Amazon Finds, where adventure awaits in the cursed jungle. But be warned, for the jungle is full of treasures that hold unspeakable horrors. Will you have the courage to explore its depths and claim the treasures that await, or will you fall victim to its cursed power" ]'><span className="wrap">{text}</span></h1>
           </div>
 
         </div>

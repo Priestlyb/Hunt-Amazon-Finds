@@ -21,3 +21,7 @@ h1 {
 h2 {
   font-family: "Secular One";
 }
+
+::-webkit-scrollbar {
+    width: 0;
+}

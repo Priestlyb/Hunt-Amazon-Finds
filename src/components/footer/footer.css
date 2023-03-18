@@ -1,7 +1,15 @@
 .footer {
+    background-color: #F5F5F5;
+}
+.footer_row {
+    margin: 10px;
     padding: 50px;
     color: #00425A;
-    background-color: #F5F5F5;
+}
+
+.copyright {
+    margin: 0 1px;
+    padding: 0 10px;
 }
 
 .row div {
@@ -17,7 +25,7 @@
 }
 
 .col_12 h1 {
-    color: #00425A;
+    color: #FF2400;
     font-weight: 800;
     text-transform: capitalize;
 }
@@ -27,15 +35,16 @@
 }
 
 @media (max-width: 1028px) {
-    .footer {
-        padding: 10px;
+    .footer_row {
+        padding: 0 20px;
     }
 
     .col_12 h1 {
-        font-size: 1.3rem;
+        font-size: 0.8rem;
     }
 
-    .col_right {
-        font-size: 0.6rem;
+    .col_right_copyright {
+        font-size: 0.8rem;
+        padding-left: 0;
     }
 }
