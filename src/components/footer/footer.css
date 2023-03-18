@@ -22,9 +22,8 @@
     text-transform: capitalize;
 }
 
-.col_right {
-    display: flex-end;
-    justify-content: end;
+.col_right_copyright {
+    padding-left: 20%;
 }
 
 @media (max-width: 1028px) {

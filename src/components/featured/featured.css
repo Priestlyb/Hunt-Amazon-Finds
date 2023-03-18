@@ -1,6 +1,9 @@
 .featured {
-    height: calc(100vh - 80px);
-    background-color: #fff;
+    height: calc(100vh - 50px);
+}
+
+.featured_row {
+    height: calc(100vh - 50px);
 }
 
 .col_left {
@@ -9,14 +12,13 @@
     align-items: center;
 }
 
-.col_left h1 {
-    color: #000;
-    font-size: 40px;
-    font-weight: 800;
-}
+.col_left p {
+    color: #3E54AC;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    line-height: 50px;
 
-.col_left h1 span {
-    color: #FFB31A;
 }
 
 .col_right {
@@ -26,14 +28,13 @@
 }
 
 .featured_img {
-    width: 85%;
+    width: 100%;
 }
 
 .col_bottom, .col_bottom a {
     color: #000;
     font-size: 25px;
     text-align: center;
-    padding-top: 80px;
 }
 
 
@@ -49,7 +50,8 @@
 
     .col_left h1 {
         padding: 10px;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
     }
 
     .featured_img {

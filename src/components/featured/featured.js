@@ -6,10 +6,10 @@ function Featured() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(100 - Math.random() * 100);
-  const [, setIndex] = useState(1);
-  const toRotate = ["You Can Really Taste IT!", "Hunt Amazon Finds!!", "Hunt Amazon Finds!!", "When You Just Feel It?", "Hunt Amazon Finds!!"];
-  const period = 2000;
+  const [delta, setDelta] = useState(30 - Math.random() * 10);
+  const [, setIndex] = useState();
+  const toRotate = [ "Welcome to Hunt Amazon Finds,", "where adventure awaits in the cursed jungle.", "But be warned, for the jungle is full of treasures that hold unspeakable horrors.", "Will you have the courage to explore its depths and claim the treasures that await, or will you fall victim to its cursed power" ];
+  const period = 1000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -36,7 +36,7 @@ function Featured() {
       setDelta(period);
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
-      setLoopNum(loopNum + 1);
+      setLoopNum(loopNum + 5);
       setIndex(1);
       setDelta(500);
     } else {
@@ -46,17 +46,17 @@ function Featured() {
 
   return (
     <div className='container-fluid featured'>
-      <div className='row'>
+      <div className='row featured_row'>
         <div className='col_left col-lg-6'>
           <div>
-          <h1>Can You Feel It?</h1>
-          <h1 className="txt-rotate" dataperiod="800" data-rotate='[ "Hunt Amazon finds!!", "Hunt Amazon finds!!", "Hunt Amazon finds!!", "When You Just Feel It?", "Hunt Amazon Finds!!" ]'><span className="wrap">{text}</span></h1>
+          <h1 className="txt-rotate" dataperiod="800" data-rotate='[ "Welcome to Hunt Amazon Finds, where adventure awaits in the cursed jungle. But be warned, for the jungle is full of treasures that hold unspeakable horrors. Will you have the courage to explore its depths and claim the treasures that await, or will you fall victim to its cursed power" ]'><span className="wrap">{text}</span></h1>
           </div>
 
         </div>
         <div className='col_right col-lg-6'>
           <img className='featured_img' src={ghost} autoPlay loop muted alt=""/>
         </div>
+        
         <div className='col_bottom col-lg-12'>
           <a href='#products'>
             <i className="fa-solid fa-angles-down"></i>

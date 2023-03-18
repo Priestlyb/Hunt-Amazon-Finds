@@ -15,8 +15,8 @@ function Footer() {
             <div className='col-6'>
                 <img src={logo} alt='' width="150px"  />
             </div>
-            <div className='col_right col-6'>
-            Hunt Amazon FInds © 2022
+            <div className='col_right_copyright col-6'>
+            <p>Hunt Amazon FInds © 2022</p>
             </div>
         </div>
 
